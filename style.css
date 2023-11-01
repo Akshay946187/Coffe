@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 17vh;
+    background: linear-gradient(to right, #7c573c 50%,  #2c1e1e 50%);
+   position: absolute;
+   z-index: 0;
+}
+
+.container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.logo img{
+    width: 7rem;
+    padding: 1.2rem;
+    left: 50%;
+    transform: translate((-50%));
+    
+   
+}
+
+.navlist{
+    display: flex;
+    padding: 1.2rem;
+    z-index: 2;
+    
+}
+.navlist li{
+    list-style: none;
+    margin-left: 3.5rem;
+    color: white;
+   
+   
+}
+
+.hero{
+    display: flex;
+}
+
+.hero .left{
+    background-color:  #7c573c;
+}
+.hero .right{
+    background-color: #2c1e1e;
+    width: 45%;
+    display: flex;
+  
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero .heroSplit{
+    width: 50%;
+    min-height: 100vh;
+}
+
+.navlist .gradint{
+    display: none;
+    background-color: #ffffff12;
+    width: 6rem;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    right: 31rem;
+    border-top: black;
+    border-radius: 0 0 2rem 2rem;
+    backdrop-filter: blur(.5rem);
+    z-index: -1;
+   
+}
+.navlist li:nth-child(2):hover ~ .gradint{
+    right:31rem ;
+    display: block;
+}
+
+.navlist li:nth-child(3):hover ~ .gradint{
+    right:25rem ;
+    display: block;
+}
+.navlist li:nth-child(4):hover ~ .gradint{
+    right:18rem ;
+    display: block;
+}
+.navlist li:nth-child(5):hover ~ .gradint{
+    right:12rem ;
+    display: block;
+}
+.navlist li:nth-child(6):hover ~ .gradint{
+    right:5rem ;
+    display: block;
+}
+
+.right .rightContant{
+    color: white;
+    z-index: 1;
+    position: absolute;
+    width: 40%;
+    padding-left: 7.5rem;
+}
+
+.rightContant h1{
+    margin: 1.2rem 0;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.04rem white;
+}
+.rightContant p{
+    margin: 1.2rem 0;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+.rightContant button{
+    margin-left: 8rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    background-color:#b05b1f ;
+    color: white;
+    border: 1px solid #7c573c;
+    border-radius: 0 0.5rem 0 0.5rem;
+}
+
+.rightContant button:hover{
+   background-color: #e16208;
+}
+
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.middle .circul{
+    height: 10rem;
+    width: 10rem;
+    background-color: white;
+    border: 0.5rem dotted white;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.middle .circul:nth-child(1){
+    margin-bottom: 1rem;
+    background-image: url("images/coffee\ beans.jpg");
+}
+.middle .circul:nth-child(2){
+    margin-bottom: 1rem;
+    background-image: url("images/coffee\ powder.jpg");
+}
+.middle .circul:nth-child(3){
+    margin: 1rem 0;
+    background-image: url("images/leaves.jpg");
+}
+
+.hero .left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
